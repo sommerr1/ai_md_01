@@ -3,6 +3,11 @@
   "name": "Google AI Mode → Obsidian",
   "version": "0.1.0",
   "description": "Save Google Search AI Mode chats to Obsidian vault as Markdown",
+  "icons": {
+    "16": "public/icons/16.png",
+    "48": "public/icons/48.png",
+    "128": "public/icons/128.png"
+  },
   "permissions": ["activeTab", "offscreen", "storage"],
   "host_permissions": ["https://www.google.com/*", "https://google.com/*"],
   "background": {
@@ -11,7 +16,12 @@
   },
   "action": {
     "default_popup": "src/popup/popup.html",
-    "default_title": "Save AI Mode chat"
+    "default_title": "Save AI Mode chat",
+    "default_icon": {
+      "16": "public/icons/16.png",
+      "48": "public/icons/48.png",
+      "128": "public/icons/128.png"
+    }
   },
   "content_scripts": [
     {

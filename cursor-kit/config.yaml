@@ -1,0 +1,35 @@
+# Корни для сканирования. Добавляй свои пути по мере необходимости.
+scan_roots:
+  win:
+    - "C:/Users/HP/OneDrive - EPAM/Documents/cursor"
+    - "//wsl.localhost/Ubuntu/project/rag_kb_01"
+  wsl:
+    - "/project/rag_kb_01"
+
+# Must-have skills для bootstrap (id папки в .cursor/skills/)
+must_have:
+  - kanban_run_task
+  - pm-on-demand
+  - to-obsidian
+  - release-changelog
+
+global_paths:
+  win:
+    - "C:/Users/HP/.cursor/skills-cursor"
+    - "C:/Users/HP/.cursor/skills"
+    - "//wsl.localhost/Ubuntu/home/hp/.cursor/skills"
+  wsl:
+    - "/home/hp/.cursor/skills"
+
+# Исключить встроенные skills Cursor из каталога (можно отключить)
+exclude_builtin_skills: false
+
+# Паттерны имён проектов/папок для пропуска
+skip_dir_names:
+  - node_modules
+  - .git
+  - dist
+  - build
+  - __pycache__
+  - data
+  - .venv

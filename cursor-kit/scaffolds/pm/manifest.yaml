@@ -1,0 +1,3 @@
+id: pm
+description: "Структура PM + kanban (inbox, product, kanban/active|done, templates, registry)"
+target_dir: pm

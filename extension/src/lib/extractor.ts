@@ -9,6 +9,11 @@ export const TURN_SELECTORS = [
   '[data-user-query]',
 ] as const;
 
+export const FALLBACK_TURN_SELECTORS = [
+  'div[role="complementary"] div.mZJni',
+  '#center_col div.mZJni',
+] as const;
+
 export function findAimcRoot(root: Document | Element = document): Element | null {
   return root.querySelector('div[data-subtree="aimc"]');
 }
@@ -47,12 +52,15 @@ function collectTurnCandidates(root: Element): Element[] {
   const seen = new Set<Element>();
   const nodes: Element[] = [];
 
-  for (const selector of TURN_SELECTORS) {
-    root.querySelectorAll(selector).forEach((el) => {
-      if (seen.has(el)) return;
-      seen.add(el);
-      nodes.push(el);
-    });
+  for (const group of [TURN_SELECTORS, FALLBACK_TURN_SELECTORS]) {
+    for (const selector of group) {
+      root.querySelectorAll(selector).forEach((el) => {
+        if (seen.has(el)) return;
+        seen.add(el);
+        nodes.push(el);
+      });
+    }
+    if (nodes.length > 0) break;
   }
 
   return dedupeNestedNodes(nodes);

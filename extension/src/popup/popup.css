@@ -8,12 +8,64 @@ main {
   padding: 12px;
 }
 
-#status {
-  font-size: 0.875rem;
-  color: #555;
+.muted {
+  color: #666;
+  font-size: 0.85rem;
 }
 
-#btn-save {
-  margin-top: 8px;
-  padding: 6px 12px;
+.error {
+  color: #b00020;
+  font-size: 0.85rem;
+}
+
+.success {
+  color: #0a7;
+  font-size: 0.85rem;
+}
+
+.hidden {
+  display: none;
+}
+
+#actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+#actions button {
+  flex: 1;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+#btn-save:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+#dialog {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+#filename-input {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 8px 0;
+  padding: 6px 8px;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+}
+
+#spinner {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #444;
 }

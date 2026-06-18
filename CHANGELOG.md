@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [0.1.0] - 2026-06-18
+
+### Added
+- KB-009 Service worker: `SAVE_REQUEST` pipeline (extract → markdown → FSAA write), error taxonomy
+- KB-010 Popup UI: status, folder picker, rename dialog, spinner, RU error messages
+- KB-011 Hardening: save mutex, scroll partial flag, fallback selectors, debug logger, icons
+- KB-012 MVP: README, manual test matrix, MVP verification doc
+
 ## [0.0.8] - 2026-06-18
 
 ### Added

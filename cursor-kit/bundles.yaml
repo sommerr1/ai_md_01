@@ -1,0 +1,28 @@
+# Наборы: skills + разворачиваемые структуры
+bundles:
+  pm-on-demand:
+    description: "PM on-demand: backlog, PRD, use cases + папка pm/"
+    skills:
+      - pm-on-demand
+    scaffolds:
+      - pm
+
+  kanban:
+    description: "Kanban run task + структура pm/kanban/"
+    skills:
+      - kanban_run_task
+    scaffolds:
+      - pm
+
+  pm-full:
+    description: "PM + Kanban skills и полная структура pm/"
+    skills:
+      - pm-on-demand
+      - kanban_run_task
+    scaffolds:
+      - pm
+
+# Skills, при apply которых по умолчанию предлагать scaffold (если не --no-scaffold)
+auto_scaffold_for_skills:
+  pm-on-demand: pm
+  kanban_run_task: pm

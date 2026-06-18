@@ -8,6 +8,7 @@ export interface ThreadPayload {
   turns: ThreadTurn[];
   sourceUrl: string;
   extractedAt: string;
+  partial?: boolean;
 }
 
 export interface SaveMeta {

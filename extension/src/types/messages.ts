@@ -24,22 +24,39 @@ export interface StatusResponse {
   turnCount?: number;
 }
 
+export interface PreviewResponse {
+  type: 'PREVIEW_RESPONSE';
+  firstMessage?: string;
+  defaultFilename?: string;
+}
+
 export interface SaveError {
   type: 'SAVE_ERROR';
-  code: string;
+  code: SaveErrorCode;
   message?: string;
 }
 
 export interface SaveSuccess {
   type: 'SAVE_SUCCESS';
   filename: string;
+  partial?: boolean;
 }
+
+export type SaveErrorCode =
+  | 'NOT_AI_MODE'
+  | 'NO_FOLDER'
+  | 'NO_TAB'
+  | 'PERMISSION_DENIED'
+  | 'EMPTY_THREAD'
+  | 'DOM_CHANGED'
+  | 'TIMEOUT'
+  | 'UNKNOWN';
 
 export type RuntimeMessage =
   | { type: 'GET_STATUS' }
   | StatusResponse
   | { type: 'GET_PREVIEW' }
-  | { type: 'PREVIEW_RESPONSE'; firstMessage?: string }
+  | PreviewResponse
   | { type: 'PICK_FOLDER' }
   | { type: 'FOLDER_SET'; displayName: string }
   | { type: 'GET_FOLDER_STATUS' }

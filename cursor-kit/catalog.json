@@ -1,0 +1,704 @@
+{
+  "version": 1,
+  "scanned_at": "2026-06-18T13:11:35.789031+00:00",
+  "platform": "win",
+  "kit_home": "C:\\Users\\HP\\OneDrive - EPAM\\Documents\\cursor\\ai_md_01\\cursor-kit",
+  "must_have": [
+    "kanban_run_task",
+    "pm-on-demand",
+    "to-obsidian",
+    "release-changelog"
+  ],
+  "artifact_count": 29,
+  "artifacts": [
+    {
+      "id": "playwright",
+      "type": "mcp",
+      "name": "playwright",
+      "description": "MCP server 'playwright' из проекта jeopardy (npx)",
+      "sources": [
+        {
+          "project": "jeopardy",
+          "path": "C:\\Users\\HP\\OneDrive - EPAM\\Documents\\cursor\\jeopardy\\.cursor\\mcp.json",
+          "server_name": "playwright",
+          "platform": "win",
+          "modified_at": "2025-07-22T12:36:22.076484+00:00",
+          "sha256": "d3b1cf995ecf992c",
+          "config": {
+            "command": "npx",
+            "args": [
+              "@playwright/mcp@latest"
+            ]
+          }
+        }
+      ],
+      "recommended_source": "C:\\Users\\HP\\OneDrive - EPAM\\Documents\\cursor\\jeopardy\\.cursor\\mcp.json"
+    },
+    {
+      "id": "automate",
+      "type": "skill",
+      "name": "automate",
+      "description": "Use this skill to create Cursor Automations.",
+      "sources": [
+        {
+          "project": "skills-cursor",
+          "path": "C:\\Users\\HP\\.cursor\\skills-cursor\\automate",
+          "skill_file": "C:\\Users\\HP\\.cursor\\skills-cursor\\automate\\SKILL.md",
+          "platform": "win",
+          "builtin": true,
+          "modified_at": "2026-06-18T10:37:12.172307+00:00",
+          "sha256": "0a0aadc25417c7cd"
+        }
+      ],
+      "recommended_source": "C:\\Users\\HP\\.cursor\\skills-cursor\\automate"
+    },
+    {
+      "id": "babysit",
+      "type": "skill",
+      "name": "babysit",
+      "description": ">-",
+      "sources": [
+        {
+          "project": "skills-cursor",
+          "path": "C:\\Users\\HP\\.cursor\\skills-cursor\\babysit",
+          "skill_file": "C:\\Users\\HP\\.cursor\\skills-cursor\\babysit\\SKILL.md",
+          "platform": "win",
+          "builtin": true,
+          "modified_at": "2026-05-21T05:46:23.261250+00:00",
+          "sha256": "b46766ed302c34e7"
+        }
+      ],
+      "recommended_source": "C:\\Users\\HP\\.cursor\\skills-cursor\\babysit"
+    },
+    {
+      "id": "brainstorm",
+      "type": "skill",
+      "name": "brainstorm",
+      "description": "Expand the horizons of a feature idea by exploring diverse approaches, technologies, and innovative concepts before any planning begins.",
+      "sources": [
+        {
+          "project": "rag_kb_01",
+          "path": "\\\\wsl.localhost\\Ubuntu\\project\\rag_kb_01\\.cursor\\skills\\brainstorm",
+          "skill_file": "\\\\wsl.localhost\\Ubuntu\\project\\rag_kb_01\\.cursor\\skills\\brainstorm\\SKILL.md",
+          "platform": "win",
+          "builtin": false,
+          "modified_at": "2026-06-17T09:30:14.154713+00:00",
+          "sha256": "af5893b81c523696"
+        },
+        {
+          "project": "formo_02",
+          "path": "C:\\Users\\HP\\OneDrive - EPAM\\Documents\\cursor\\formo_02\\.cursor\\skills\\brainstorm",
+          "skill_file": "C:\\Users\\HP\\OneDrive - EPAM\\Documents\\cursor\\formo_02\\.cursor\\skills\\brainstorm\\SKILL.md",
+          "platform": "win",
+          "builtin": false,
+          "modified_at": "2026-05-28T20:02:33.822620+00:00",
+          "sha256": "05b0cc6622e492b3"
+        },
+        {
+          "project": "ai_md_01",
+          "path": "C:\\Users\\HP\\OneDrive - EPAM\\Documents\\cursor\\ai_md_01\\.cursor\\skills\\brainstorm",
+          "skill_file": "C:\\Users\\HP\\OneDrive - EPAM\\Documents\\cursor\\ai_md_01\\.cursor\\skills\\brainstorm\\SKILL.md",
+          "platform": "win",
+          "builtin": false,
+          "modified_at": "2026-05-21T16:42:04.500527+00:00",
+          "sha256": "4900a94e00b0c03b"
+        },
+        {
+          "project": "transcrib_01",
+          "path": "C:\\Users\\HP\\OneDrive - EPAM\\Documents\\cursor\\transcrib_01\\.cursor\\skills\\brainstorm",
+          "skill_file": "C:\\Users\\HP\\OneDrive - EPAM\\Documents\\cursor\\transcrib_01\\.cursor\\skills\\brainstorm\\SKILL.md",
+          "platform": "win",
+          "builtin": false,
+          "modified_at": "2026-05-21T16:42:04.500527+00:00",
+          "sha256": "4900a94e00b0c03b"
+        }
+      ],
+      "recommended_source": "\\\\wsl.localhost\\Ubuntu\\project\\rag_kb_01\\.cursor\\skills\\brainstorm"
+    },
+    {
+      "id": "canvas",
+      "type": "skill",
+      "name": "canvas",
+      "description": ">-",
+      "sources": [
+        {
+          "project": "skills-cursor",
+          "path": "C:\\Users\\HP\\.cursor\\skills-cursor\\canvas",
+          "skill_file": "C:\\Users\\HP\\.cursor\\skills-cursor\\canvas\\SKILL.md",
+          "platform": "win",
+          "builtin": true,
+          "modified_at": "2026-06-18T10:37:11.658740+00:00",
+          "sha256": "85d0dfeafa70a870"
+        }
+      ],
+      "recommended_source": "C:\\Users\\HP\\.cursor\\skills-cursor\\canvas"
+    },
+    {
+      "id": "create-hook",
+      "type": "skill",
+      "name": "create-hook",
+      "description": ">-",
+      "sources": [
+        {
+          "project": "skills-cursor",
+          "path": "C:\\Users\\HP\\.cursor\\skills-cursor\\create-hook",
+          "skill_file": "C:\\Users\\HP\\.cursor\\skills-cursor\\create-hook\\SKILL.md",
+          "platform": "win",
+          "builtin": true,
+          "modified_at": "2026-05-21T05:46:23.293621+00:00",
+          "sha256": "28bfa0c6cd13fa01"
+        }
+      ],
+      "recommended_source": "C:\\Users\\HP\\.cursor\\skills-cursor\\create-hook"
+    },
+    {
+      "id": "create-rule",
+      "type": "skill",
+      "name": "create-rule",
+      "description": ">-",
+      "sources": [
+        {
+          "project": "skills-cursor",
+          "path": "C:\\Users\\HP\\.cursor\\skills-cursor\\create-rule",
+          "skill_file": "C:\\Users\\HP\\.cursor\\skills-cursor\\create-rule\\SKILL.md",
+          "platform": "win",
+          "builtin": true,
+          "modified_at": "2026-05-21T05:46:23.305368+00:00",
+          "sha256": "fe8499dfe93edbf8"
+        }
+      ],
+      "recommended_source": "C:\\Users\\HP\\.cursor\\skills-cursor\\create-rule"
+    },
+    {
+      "id": "create-skill",
+      "type": "skill",
+      "name": "create-skill",
+      "description": ">-",
+      "sources": [
+        {
+          "project": "skills-cursor",
+          "path": "C:\\Users\\HP\\.cursor\\skills-cursor\\create-skill",
+          "skill_file": "C:\\Users\\HP\\.cursor\\skills-cursor\\create-skill\\SKILL.md",
+          "platform": "win",
+          "builtin": true,
+          "modified_at": "2026-05-21T05:46:23.312688+00:00",
+          "sha256": "f3df382ea9cf2119"
+        }
+      ],
+      "recommended_source": "C:\\Users\\HP\\.cursor\\skills-cursor\\create-skill"
+    },
+    {
+      "id": "create-subagent",
+      "type": "skill",
+      "name": "create-subagent",
+      "description": ">-",
+      "sources": [
+        {
+          "project": "skills-cursor",
+          "path": "C:\\Users\\HP\\.cursor\\skills-cursor\\create-subagent",
+          "skill_file": "C:\\Users\\HP\\.cursor\\skills-cursor\\create-subagent\\SKILL.md",
+          "platform": "win",
+          "builtin": true,
+          "modified_at": "2026-05-21T05:46:23.318171+00:00",
+          "sha256": "ab46a80f90cb3810"
+        }
+      ],
+      "recommended_source": "C:\\Users\\HP\\.cursor\\skills-cursor\\create-subagent"
+    },
+    {
+      "id": "excalidraw-architect",
+      "type": "skill",
+      "name": "excalidraw-architect",
+      "description": "Generate comprehensive visual architecture diagrams using Mermaid.js syntax or Excalidraw-compatible structures to represent the system design.",
+      "sources": [
+        {
+          "project": "rag_kb_01",
+          "path": "\\\\wsl.localhost\\Ubuntu\\project\\rag_kb_01\\.cursor\\skills\\excalidraw-architect",
+          "skill_file": "\\\\wsl.localhost\\Ubuntu\\project\\rag_kb_01\\.cursor\\skills\\excalidraw-architect\\SKILL.md",
+          "platform": "win",
+          "builtin": false,
+          "modified_at": "2026-06-17T09:30:14.158713+00:00",
+          "sha256": "92d81b4e264e5da4"
+        },
+        {
+          "project": "formo_02",
+          "path": "C:\\Users\\HP\\OneDrive - EPAM\\Documents\\cursor\\formo_02\\.cursor\\skills\\excalidraw-architect",
+          "skill_file": "C:\\Users\\HP\\OneDrive - EPAM\\Documents\\cursor\\formo_02\\.cursor\\skills\\excalidraw-architect\\SKILL.md",
+          "platform": "win",
+          "builtin": false,
+          "modified_at": "2026-05-28T20:02:35.498591+00:00",
+          "sha256": "08632b36f58a4504"
+        },
+        {
+          "project": "ai_md_01",
+          "path": "C:\\Users\\HP\\OneDrive - EPAM\\Documents\\cursor\\ai_md_01\\.cursor\\skills\\excalidraw-architect",
+          "skill_file": "C:\\Users\\HP\\OneDrive - EPAM\\Documents\\cursor\\ai_md_01\\.cursor\\skills\\excalidraw-architect\\SKILL.md",
+          "platform": "win",
+          "builtin": false,
+          "modified_at": "2026-05-21T16:40:42.827699+00:00",
+          "sha256": "92d81b4e264e5da4"
+        },
+        {
+          "project": "transcrib_01",
+          "path": "C:\\Users\\HP\\OneDrive - EPAM\\Documents\\cursor\\transcrib_01\\.cursor\\skills\\excalidraw-architect",
+          "skill_file": "C:\\Users\\HP\\OneDrive - EPAM\\Documents\\cursor\\transcrib_01\\.cursor\\skills\\excalidraw-architect\\SKILL.md",
+          "platform": "win",
+          "builtin": false,
+          "modified_at": "2026-05-21T16:40:42.827699+00:00",
+          "sha256": "92d81b4e264e5da4"
+        }
+      ],
+      "recommended_source": "\\\\wsl.localhost\\Ubuntu\\project\\rag_kb_01\\.cursor\\skills\\excalidraw-architect"
+    },
+    {
+      "id": "grill-me",
+      "type": "skill",
+      "name": "grill-me",
+      "description": "Ruthlessly interview the user about their plan, architecture, or design choices until absolute alignment is achieved. Use when the user says \"grill me\", \"grill-me\", \"grillme\", \"grill my plan\", or asks to be interviewed about architecture or design before implementation.",
+      "sources": [
+        {
+          "project": "rag_kb_01",
+          "path": "\\\\wsl.localhost\\Ubuntu\\project\\rag_kb_01\\.cursor\\skills\\grill-me",
+          "skill_file": "\\\\wsl.localhost\\Ubuntu\\project\\rag_kb_01\\.cursor\\skills\\grill-me\\SKILL.md",
+          "platform": "win",
+          "builtin": false,
+          "modified_at": "2026-06-17T09:30:14.158713+00:00",
+          "sha256": "180baf05ae3dc528"
+        },
+        {
+          "project": "formo_02",
+          "path": "C:\\Users\\HP\\OneDrive - EPAM\\Documents\\cursor\\formo_02\\.cursor\\skills\\grill-me",
+          "skill_file": "C:\\Users\\HP\\OneDrive - EPAM\\Documents\\cursor\\formo_02\\.cursor\\skills\\grill-me\\SKILL.md",
+          "platform": "win",
+          "builtin": false,
+          "modified_at": "2026-05-28T20:02:36.338873+00:00",
+          "sha256": "2dbf76b34c1ad8fa"
+        },
+        {
+          "project": "ai_md_01",
+          "path": "C:\\Users\\HP\\OneDrive - EPAM\\Documents\\cursor\\ai_md_01\\.cursor\\skills\\grill-me",
+          "skill_file": "C:\\Users\\HP\\OneDrive - EPAM\\Documents\\cursor\\ai_md_01\\.cursor\\skills\\grill-me\\SKILL.md",
+          "platform": "win",
+          "builtin": false,
+          "modified_at": "2026-05-21T14:01:45.868974+00:00",
+          "sha256": "180baf05ae3dc528"
+        },
+        {
+          "project": "transcrib_01",
+          "path": "C:\\Users\\HP\\OneDrive - EPAM\\Documents\\cursor\\transcrib_01\\.cursor\\skills\\grill-me",
+          "skill_file": "C:\\Users\\HP\\OneDrive - EPAM\\Documents\\cursor\\transcrib_01\\.cursor\\skills\\grill-me\\SKILL.md",
+          "platform": "win",
+          "builtin": false,
+          "modified_at": "2026-05-21T14:01:45.868974+00:00",
+          "sha256": "180baf05ae3dc528"
+        }
+      ],
+      "recommended_source": "\\\\wsl.localhost\\Ubuntu\\project\\rag_kb_01\\.cursor\\skills\\grill-me"
+    },
+    {
+      "id": "kanban_run_task",
+      "type": "skill",
+      "name": "kanban-run-task",
+      "description": "Берет первую задачу со статусом in_progress из канбан-процесса, формирует описание, план, DoD, реализует изменения, при необходимости добавляет и запускает тесты, затем выполняет /changelog-release, /rebuild, коммит+push code-репо и только в самом конце переносит задачу в done в PM-репо. Использовать, когда нужно провести задачу из канбана до полностью готового к доставке состояния.",
+      "sources": [
+        {
+          "project": "rag_kb_01",
+          "path": "\\\\wsl.localhost\\Ubuntu\\project\\rag_kb_01\\.cursor\\skills\\kanban_run_task",
+          "skill_file": "\\\\wsl.localhost\\Ubuntu\\project\\rag_kb_01\\.cursor\\skills\\kanban_run_task\\SKILL.md",
+          "platform": "win",
+          "builtin": false,
+          "modified_at": "2026-06-17T09:30:14.158713+00:00",
+          "sha256": "6cc82d80c8a6bc00"
+        },
+        {
+          "project": "skills",
+          "path": "C:\\Users\\HP\\.cursor\\skills\\kanban_run_task",
+          "skill_file": "C:\\Users\\HP\\.cursor\\skills\\kanban_run_task\\SKILL.md",
+          "platform": "win",
+          "builtin": false,
+          "modified_at": "2026-06-17T09:30:14.158713+00:00",
+          "sha256": "6cc82d80c8a6bc00"
+        }
+      ],
+      "recommended_source": "\\\\wsl.localhost\\Ubuntu\\project\\rag_kb_01\\.cursor\\skills\\kanban_run_task"
+    },
+    {
+      "id": "loop",
+      "type": "skill",
+      "name": "loop",
+      "description": ">-",
+      "sources": [
+        {
+          "project": "skills-cursor",
+          "path": "C:\\Users\\HP\\.cursor\\skills-cursor\\loop",
+          "skill_file": "C:\\Users\\HP\\.cursor\\skills-cursor\\loop\\SKILL.md",
+          "platform": "win",
+          "builtin": true,
+          "modified_at": "2026-06-01T19:05:32.429989+00:00",
+          "sha256": "e04f220748ab4aa7"
+        }
+      ],
+      "recommended_source": "C:\\Users\\HP\\.cursor\\skills-cursor\\loop"
+    },
+    {
+      "id": "migrate-to-skills",
+      "type": "skill",
+      "name": "migrate-to-skills",
+      "description": ">-",
+      "sources": [
+        {
+          "project": "skills-cursor",
+          "path": "C:\\Users\\HP\\.cursor\\skills-cursor\\migrate-to-skills",
+          "skill_file": "C:\\Users\\HP\\.cursor\\skills-cursor\\migrate-to-skills\\SKILL.md",
+          "platform": "win",
+          "builtin": true,
+          "modified_at": "2026-05-21T05:46:23.390189+00:00",
+          "sha256": "78c0483cc96ea3dc"
+        }
+      ],
+      "recommended_source": "C:\\Users\\HP\\.cursor\\skills-cursor\\migrate-to-skills"
+    },
+    {
+      "id": "pm-on-demand",
+      "type": "skill",
+      "name": "pm-on-demand",
+      "description": "Run lightweight on-demand PM flow with inbox backlog, short PRD, use cases, and kanban handoff in pm/ submodule. Use when user asks to capture ideas, triage feature requests, or formalize planning before implementation.",
+      "sources": [
+        {
+          "project": "rag_kb_01",
+          "path": "\\\\wsl.localhost\\Ubuntu\\project\\rag_kb_01\\.cursor\\skills\\pm-on-demand",
+          "skill_file": "\\\\wsl.localhost\\Ubuntu\\project\\rag_kb_01\\.cursor\\skills\\pm-on-demand\\SKILL.md",
+          "platform": "win",
+          "builtin": false,
+          "modified_at": "2026-06-17T09:30:14.158713+00:00",
+          "sha256": "f6f69c54b9d034b8"
+        },
+        {
+          "project": "skills",
+          "path": "C:\\Users\\HP\\.cursor\\skills\\pm-on-demand",
+          "skill_file": "C:\\Users\\HP\\.cursor\\skills\\pm-on-demand\\SKILL.md",
+          "platform": "win",
+          "builtin": false,
+          "modified_at": "2026-06-17T09:30:14.158713+00:00",
+          "sha256": "f6f69c54b9d034b8"
+        }
+      ],
+      "recommended_source": "\\\\wsl.localhost\\Ubuntu\\project\\rag_kb_01\\.cursor\\skills\\pm-on-demand"
+    },
+    {
+      "id": "rebuild",
+      "type": "skill",
+      "name": "rebuild",
+      "description": "Rebuilds and restarts the product for this repository using Docker Compose or local Python service flow, then verifies service health. Use when the user asks to rebuild, restart, redeploy locally, or apply code changes by restarting the running app.",
+      "sources": [
+        {
+          "project": "rag_kb_01",
+          "path": "\\\\wsl.localhost\\Ubuntu\\project\\rag_kb_01\\.cursor\\skills\\rebuild",
+          "skill_file": "\\\\wsl.localhost\\Ubuntu\\project\\rag_kb_01\\.cursor\\skills\\rebuild\\SKILL.md",
+          "platform": "win",
+          "builtin": false,
+          "modified_at": "2026-06-17T09:30:14.158713+00:00",
+          "sha256": "1c4042dc22410247"
+        }
+      ],
+      "recommended_source": "\\\\wsl.localhost\\Ubuntu\\project\\rag_kb_01\\.cursor\\skills\\rebuild"
+    },
+    {
+      "id": "release-changelog",
+      "type": "skill",
+      "name": "release-changelog",
+      "description": "Готовит релизные обновления VERSION и CHANGELOG.md на основе текущих git-изменений. Использовать, когда пользователь просит обновить версию, собрать последние изменения в ченджлог, подготовить релизный блок или сделать release notes.",
+      "sources": [
+        {
+          "project": "rag_kb_01",
+          "path": "\\\\wsl.localhost\\Ubuntu\\project\\rag_kb_01\\.cursor\\skills\\release-changelog",
+          "skill_file": "\\\\wsl.localhost\\Ubuntu\\project\\rag_kb_01\\.cursor\\skills\\release-changelog\\SKILL.md",
+          "platform": "win",
+          "builtin": false,
+          "modified_at": "2026-06-17T09:30:14.158713+00:00",
+          "sha256": "5e13654011082a5d"
+        },
+        {
+          "project": "skills",
+          "path": "C:\\Users\\HP\\.cursor\\skills\\release-changelog",
+          "skill_file": "C:\\Users\\HP\\.cursor\\skills\\release-changelog\\SKILL.md",
+          "platform": "win",
+          "builtin": false,
+          "modified_at": "2026-06-05T20:46:38.841673+00:00",
+          "sha256": "5e13654011082a5d"
+        },
+        {
+          "project": "skills",
+          "path": "\\\\wsl.localhost\\Ubuntu\\home\\hp\\.cursor\\skills\\release-changelog",
+          "skill_file": "\\\\wsl.localhost\\Ubuntu\\home\\hp\\.cursor\\skills\\release-changelog\\SKILL.md",
+          "platform": "win",
+          "builtin": false,
+          "modified_at": "2026-06-05T20:46:38.841673+00:00",
+          "sha256": "5e13654011082a5d"
+        }
+      ],
+      "recommended_source": "\\\\wsl.localhost\\Ubuntu\\project\\rag_kb_01\\.cursor\\skills\\release-changelog"
+    },
+    {
+      "id": "review",
+      "type": "skill",
+      "name": "review",
+      "description": "Review code changes with the Bugbot or Security Review subagent.",
+      "sources": [
+        {
+          "project": "skills-cursor",
+          "path": "C:\\Users\\HP\\.cursor\\skills-cursor\\review",
+          "skill_file": "C:\\Users\\HP\\.cursor\\skills-cursor\\review\\SKILL.md",
+          "platform": "win",
+          "builtin": true,
+          "modified_at": "2026-06-18T10:37:13.360749+00:00",
+          "sha256": "bd00601823f73cce"
+        }
+      ],
+      "recommended_source": "C:\\Users\\HP\\.cursor\\skills-cursor\\review"
+    },
+    {
+      "id": "review-bugbot",
+      "type": "skill",
+      "name": "review-bugbot",
+      "description": "Review code changes with Bugbot subagent.",
+      "sources": [
+        {
+          "project": "skills-cursor",
+          "path": "C:\\Users\\HP\\.cursor\\skills-cursor\\review-bugbot",
+          "skill_file": "C:\\Users\\HP\\.cursor\\skills-cursor\\review-bugbot\\SKILL.md",
+          "platform": "win",
+          "builtin": true,
+          "modified_at": "2026-06-18T10:37:13.366753+00:00",
+          "sha256": "9f97dcdbab60fe6f"
+        }
+      ],
+      "recommended_source": "C:\\Users\\HP\\.cursor\\skills-cursor\\review-bugbot"
+    },
+    {
+      "id": "review-security",
+      "type": "skill",
+      "name": "review-security",
+      "description": "Review code changes with Security Review subagent.",
+      "sources": [
+        {
+          "project": "skills-cursor",
+          "path": "C:\\Users\\HP\\.cursor\\skills-cursor\\review-security",
+          "skill_file": "C:\\Users\\HP\\.cursor\\skills-cursor\\review-security\\SKILL.md",
+          "platform": "win",
+          "builtin": true,
+          "modified_at": "2026-06-18T10:37:13.373203+00:00",
+          "sha256": "482fe80be0f69eb6"
+        }
+      ],
+      "recommended_source": "C:\\Users\\HP\\.cursor\\skills-cursor\\review-security"
+    },
+    {
+      "id": "sdk",
+      "type": "skill",
+      "name": "sdk",
+      "description": ">-",
+      "sources": [
+        {
+          "project": "skills-cursor",
+          "path": "C:\\Users\\HP\\.cursor\\skills-cursor\\sdk",
+          "skill_file": "C:\\Users\\HP\\.cursor\\skills-cursor\\sdk\\SKILL.md",
+          "platform": "win",
+          "builtin": true,
+          "modified_at": "2026-05-26T08:11:17.251611+00:00",
+          "sha256": "0db41158a6b4fd16"
+        }
+      ],
+      "recommended_source": "C:\\Users\\HP\\.cursor\\skills-cursor\\sdk"
+    },
+    {
+      "id": "shell",
+      "type": "skill",
+      "name": "shell",
+      "description": ">-",
+      "sources": [
+        {
+          "project": "skills-cursor",
+          "path": "C:\\Users\\HP\\.cursor\\skills-cursor\\shell",
+          "skill_file": "C:\\Users\\HP\\.cursor\\skills-cursor\\shell\\SKILL.md",
+          "platform": "win",
+          "builtin": true,
+          "modified_at": "2026-05-21T05:46:23.417564+00:00",
+          "sha256": "b354ce28c70af1d5"
+        }
+      ],
+      "recommended_source": "C:\\Users\\HP\\.cursor\\skills-cursor\\shell"
+    },
+    {
+      "id": "skill_kit",
+      "type": "skill",
+      "name": "skill_kit",
+      "description": ">-",
+      "sources": [
+        {
+          "project": "skills",
+          "path": "C:\\Users\\HP\\.cursor\\skills\\skill_kit",
+          "skill_file": "C:\\Users\\HP\\.cursor\\skills\\skill_kit\\SKILL.md",
+          "platform": "win",
+          "builtin": false,
+          "modified_at": "2026-06-18T12:25:07.067989+00:00",
+          "sha256": "a4a4d1a9ec3c4d54"
+        }
+      ],
+      "recommended_source": "C:\\Users\\HP\\.cursor\\skills\\skill_kit"
+    },
+    {
+      "id": "split-to-prs",
+      "type": "skill",
+      "name": "split-to-prs",
+      "description": ">-",
+      "sources": [
+        {
+          "project": "skills-cursor",
+          "path": "C:\\Users\\HP\\.cursor\\skills-cursor\\split-to-prs",
+          "skill_file": "C:\\Users\\HP\\.cursor\\skills-cursor\\split-to-prs\\SKILL.md",
+          "platform": "win",
+          "builtin": true,
+          "modified_at": "2026-05-21T05:46:23.428003+00:00",
+          "sha256": "61e3b94b54457e0f"
+        }
+      ],
+      "recommended_source": "C:\\Users\\HP\\.cursor\\skills-cursor\\split-to-prs"
+    },
+    {
+      "id": "statusline",
+      "type": "skill",
+      "name": "statusline",
+      "description": ">-",
+      "sources": [
+        {
+          "project": "skills-cursor",
+          "path": "C:\\Users\\HP\\.cursor\\skills-cursor\\statusline",
+          "skill_file": "C:\\Users\\HP\\.cursor\\skills-cursor\\statusline\\SKILL.md",
+          "platform": "win",
+          "builtin": true,
+          "modified_at": "2026-05-21T05:46:23.453123+00:00",
+          "sha256": "9ce07cefc16faf73"
+        }
+      ],
+      "recommended_source": "C:\\Users\\HP\\.cursor\\skills-cursor\\statusline"
+    },
+    {
+      "id": "to-obsidian",
+      "type": "skill",
+      "name": "to-obsidian",
+      "description": "По вызову /to-obsidian копирует markdown-файлы текущего проекта в Obsidian на Windows в подпапку с именем проекта. Использовать, когда пользователь просит выгрузить .md в Obsidian projects.",
+      "sources": [
+        {
+          "project": "rag_kb_01",
+          "path": "\\\\wsl.localhost\\Ubuntu\\project\\rag_kb_01\\.cursor\\skills\\to-obsidian",
+          "skill_file": "\\\\wsl.localhost\\Ubuntu\\project\\rag_kb_01\\.cursor\\skills\\to-obsidian\\SKILL.md",
+          "platform": "win",
+          "builtin": false,
+          "modified_at": "2026-06-17T09:30:14.158713+00:00",
+          "sha256": "ee6c9f07f3dc567c"
+        },
+        {
+          "project": "skills",
+          "path": "C:\\Users\\HP\\.cursor\\skills\\to-obsidian",
+          "skill_file": "C:\\Users\\HP\\.cursor\\skills\\to-obsidian\\SKILL.md",
+          "platform": "win",
+          "builtin": false,
+          "modified_at": "2026-06-09T13:02:45.358109+00:00",
+          "sha256": "bc7af81bfdede85c"
+        },
+        {
+          "project": "skills",
+          "path": "\\\\wsl.localhost\\Ubuntu\\home\\hp\\.cursor\\skills\\to-obsidian",
+          "skill_file": "\\\\wsl.localhost\\Ubuntu\\home\\hp\\.cursor\\skills\\to-obsidian\\SKILL.md",
+          "platform": "win",
+          "builtin": false,
+          "modified_at": "2026-06-09T13:02:45.358109+00:00",
+          "sha256": "bc7af81bfdede85c"
+        }
+      ],
+      "recommended_source": "\\\\wsl.localhost\\Ubuntu\\project\\rag_kb_01\\.cursor\\skills\\to-obsidian"
+    },
+    {
+      "id": "update-cli-config",
+      "type": "skill",
+      "name": "update-cli-config",
+      "description": ">-",
+      "sources": [
+        {
+          "project": "skills-cursor",
+          "path": "C:\\Users\\HP\\.cursor\\skills-cursor\\update-cli-config",
+          "skill_file": "C:\\Users\\HP\\.cursor\\skills-cursor\\update-cli-config\\SKILL.md",
+          "platform": "win",
+          "builtin": true,
+          "modified_at": "2026-06-08T10:42:53.677257+00:00",
+          "sha256": "a5cf57527b424e02"
+        }
+      ],
+      "recommended_source": "C:\\Users\\HP\\.cursor\\skills-cursor\\update-cli-config"
+    },
+    {
+      "id": "update-cursor-settings",
+      "type": "skill",
+      "name": "update-cursor-settings",
+      "description": ">-",
+      "sources": [
+        {
+          "project": "skills-cursor",
+          "path": "C:\\Users\\HP\\.cursor\\skills-cursor\\update-cursor-settings",
+          "skill_file": "C:\\Users\\HP\\.cursor\\skills-cursor\\update-cursor-settings\\SKILL.md",
+          "platform": "win",
+          "builtin": true,
+          "modified_at": "2026-05-21T05:46:23.478533+00:00",
+          "sha256": "8b5ee1a74dc964f5"
+        }
+      ],
+      "recommended_source": "C:\\Users\\HP\\.cursor\\skills-cursor\\update-cursor-settings"
+    },
+    {
+      "id": "write-plan",
+      "type": "skill",
+      "name": "write-plan",
+      "description": "Convert a chosen feature idea into a hyper-detailed, step-by-step technical plan written directly to a markdown file.",
+      "sources": [
+        {
+          "project": "rag_kb_01",
+          "path": "\\\\wsl.localhost\\Ubuntu\\project\\rag_kb_01\\.cursor\\skills\\write-plan",
+          "skill_file": "\\\\wsl.localhost\\Ubuntu\\project\\rag_kb_01\\.cursor\\skills\\write-plan\\SKILL.md",
+          "platform": "win",
+          "builtin": false,
+          "modified_at": "2026-06-17T09:30:14.158713+00:00",
+          "sha256": "ecc0c45b86349419"
+        },
+        {
+          "project": "formo_02",
+          "path": "C:\\Users\\HP\\OneDrive - EPAM\\Documents\\cursor\\formo_02\\.cursor\\skills\\write-plan",
+          "skill_file": "C:\\Users\\HP\\OneDrive - EPAM\\Documents\\cursor\\formo_02\\.cursor\\skills\\write-plan\\SKILL.md",
+          "platform": "win",
+          "builtin": false,
+          "modified_at": "2026-05-28T20:02:34.602997+00:00",
+          "sha256": "63a5c6020d628c29"
+        },
+        {
+          "project": "ai_md_01",
+          "path": "C:\\Users\\HP\\OneDrive - EPAM\\Documents\\cursor\\ai_md_01\\.cursor\\skills\\write-plan",
+          "skill_file": "C:\\Users\\HP\\OneDrive - EPAM\\Documents\\cursor\\ai_md_01\\.cursor\\skills\\write-plan\\SKILL.md",
+          "platform": "win",
+          "builtin": false,
+          "modified_at": "2026-05-21T16:41:52.503770+00:00",
+          "sha256": "ecc0c45b86349419"
+        },
+        {
+          "project": "transcrib_01",
+          "path": "C:\\Users\\HP\\OneDrive - EPAM\\Documents\\cursor\\transcrib_01\\.cursor\\skills\\write-plan",
+          "skill_file": "C:\\Users\\HP\\OneDrive - EPAM\\Documents\\cursor\\transcrib_01\\.cursor\\skills\\write-plan\\SKILL.md",
+          "platform": "win",
+          "builtin": false,
+          "modified_at": "2026-05-21T16:41:52.503770+00:00",
+          "sha256": "ecc0c45b86349419"
+        }
+      ],
+      "recommended_source": "\\\\wsl.localhost\\Ubuntu\\project\\rag_kb_01\\.cursor\\skills\\write-plan"
+    }
+  ]
+}

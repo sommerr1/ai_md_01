@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,8 +8,26 @@
 </head>
 <body>
   <main>
-    <p id="status">Checking…</p>
-    <button id="btn-save" type="button" disabled>Save</button>
+    <p id="status">Проверка…</p>
+    <p id="folder-status" class="muted">Папка не выбрана</p>
+
+    <div id="dialog" class="hidden" role="dialog" aria-labelledby="dialog-title">
+      <p id="dialog-title">Имя файла</p>
+      <input id="filename-input" type="text" maxlength="80" />
+      <div class="row">
+        <button id="btn-confirm" type="button">Сохранить</button>
+        <button id="btn-cancel" type="button">Отмена</button>
+      </div>
+    </div>
+
+    <div id="actions">
+      <button id="btn-save" type="button" disabled>Сохранить</button>
+      <button id="btn-pick-folder" type="button">Изменить папку</button>
+    </div>
+
+    <div id="spinner" class="hidden" aria-live="polite">Сохранение…</div>
+    <p id="error" class="error hidden" role="alert"></p>
+    <p id="success" class="success hidden" role="status"></p>
   </main>
   <script type="module" src="./popup.ts"></script>
 </body>
