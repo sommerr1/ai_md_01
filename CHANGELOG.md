@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [0.0.8] - 2026-06-18
+
+### Added
+- KB-008 Markdown pipeline: Turndown+GFM, `buildMarkdown`, YAML frontmatter, filename sanitization
+
 ## [0.0.7] - 2026-06-18
 
 ### Added
