@@ -1,0 +1,3 @@
+[submodule "pm"]
+	path = pm
+	url = https://github.com/sommerr1/ai_md_01_pm.git
