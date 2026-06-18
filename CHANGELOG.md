@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [0.0.5] - 2026-06-18
+
+### Added
+- KB-005 Offscreen + FSAA: `fsaa-storage.ts` (idb-keyval persist, write/overwrite), offscreen message handlers, SW proxy, vitest tests
+
 ## [0.0.4] - 2026-06-18
 
 ### Added

@@ -19,5 +19,11 @@
       "js": ["src/content/google-ai-mode.ts"],
       "run_at": "document_idle"
     }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["src/offscreen/offscreen.html"],
+      "matches": ["<all_urls>"]
+    }
   ]
 }

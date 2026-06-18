@@ -42,6 +42,7 @@ export type RuntimeMessage =
   | { type: 'PICK_FOLDER' }
   | { type: 'FOLDER_SET'; displayName: string }
   | { type: 'GET_FOLDER_STATUS' }
+  | { type: 'FOLDER_STATUS'; hasFolder: boolean; displayName?: string }
   | { type: 'SAVE_REQUEST'; filename: string }
   | { type: 'EXTRACT_THREAD' }
   | { type: 'THREAD_EXTRACTED'; payload: ThreadPayload }
