@@ -11,6 +11,7 @@ export type MessageType =
   | 'SAVE_REQUEST'
   | 'EXTRACT_THREAD'
   | 'THREAD_EXTRACTED'
+  | 'EXTRACT_ERROR'
   | 'WRITE_FILE'
   | 'WRITE_SUCCESS'
   | 'WRITE_ERROR'
@@ -46,6 +47,7 @@ export type RuntimeMessage =
   | { type: 'SAVE_REQUEST'; filename: string }
   | { type: 'EXTRACT_THREAD' }
   | { type: 'THREAD_EXTRACTED'; payload: ThreadPayload }
+  | { type: 'EXTRACT_ERROR'; code: 'EMPTY_THREAD' | 'DOM_CHANGED'; message?: string }
   | { type: 'WRITE_FILE'; filename: string; content: string }
   | { type: 'WRITE_SUCCESS'; filename: string }
   | { type: 'WRITE_ERROR'; code: string }
