@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KB-002 FSAA Spike</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 640px; margin: 2rem auto; padding: 0 1rem; }
+    button { margin: 0.25rem 0.25rem 0.25rem 0; padding: 0.5rem 0.75rem; cursor: pointer; }
+    pre { background: #f4f4f4; padding: 1rem; overflow: auto; font-size: 0.85rem; }
+    .ok { color: #0a0; }
+    .err { color: #c00; }
+  </style>
+</head>
+<body>
+  <h1>KB-002: FSAA Spike</h1>
+  <p>Chrome/Edge 109+. Запуск: <code>npx serve docs/spike/fsaa-spike</code> → открыть localhost.</p>
+  <div id="status">Загрузка…</div>
+  <p>
+    <button id="btn-pick">1. Pick folder</button>
+    <button id="btn-write">2. Write test.md</button>
+    <button id="btn-append">3. Append line</button>
+    <button id="btn-overwrite">4. Overwrite test.md</button>
+    <button id="btn-cyrillic">5. Write тест-файл.md</button>
+    <button id="btn-perm">Check permission</button>
+  </p>
+  <pre id="log"></pre>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

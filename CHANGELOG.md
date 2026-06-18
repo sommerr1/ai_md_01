@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [0.0.2] - 2026-06-18
+
+### Added
+- KB-002 FSAA spike: `docs/spike/fsaa-notes.md`, interactive stub `docs/spike/fsaa-spike/` (IndexedDB persist, overwrite, Cyrillic filenames)
+
 ## [0.0.1] - 2026-06-18
 
 ### Added
