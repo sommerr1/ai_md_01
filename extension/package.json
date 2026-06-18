@@ -1,0 +1,23 @@
+{
+  "name": "google-ai-mode-obsidian",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "load": "echo Load dist/ via chrome://extensions"
+  },
+  "dependencies": {
+    "idb-keyval": "^6.2.1",
+    "turndown": "^7.2.0",
+    "turndown-plugin-gfm": "^1.0.2",
+    "yaml": "^2.8.0"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^2.0.0-beta.28",
+    "@types/chrome": "^0.0.268",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.3"
+  }
+}
