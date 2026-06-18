@@ -1,0 +1,62 @@
+<!--
+  KB-003 sample — synthetic HTML mimicking Google AI Mode response blocks.
+  Sources: citation pills, GFM-like structures, nested lists, code, tables.
+-->
+<div class="aimc-response">
+  <h2>TypeScript basics</h2>
+  <p><strong>TypeScript</strong> is a typed superset of JavaScript that compiles to plain JS.</p>
+
+  <p>Key benefits include:</p>
+  <ul>
+    <li>Static typing at compile time</li>
+    <li>Better IDE support
+      <ul>
+        <li>Autocomplete</li>
+        <li>Inline documentation</li>
+      </ul>
+    </li>
+    <li>Gradual adoption in existing JS projects</li>
+  </ul>
+
+  <p>Example interface and function:</p>
+  <pre><code class="language-typescript">interface User {
+  id: number;
+  name: string;
+}
+
+function greet(user: User): string {
+  return `Hello, ${user.name}!`;
+}</code></pre>
+
+  <p>Comparison table:</p>
+  <table>
+    <thead>
+      <tr><th>Feature</th><th>JavaScript</th><th>TypeScript</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Types</td><td>Dynamic</td><td>Static optional</td></tr>
+      <tr><td>Compile step</td><td>No</td><td>Yes (tsc)</td></tr>
+    </tbody>
+  </table>
+
+  <p>Learn more: <a href="https://www.typescriptlang.org/docs/">TypeScript Handbook</a> and
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">MDN JavaScript</a>.</p>
+
+  <p>Inline code like <code>const x: number = 1</code> should stay inline.</p>
+
+  <!-- Media stripped by custom rule -->
+  <img src="https://example.com/chart.png" alt="chart" />
+  <video src="https://example.com/demo.mp4"></video>
+  <svg viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg>
+
+  <!-- Citation pill (Google AI Mode) — strip in v1 -->
+  <button data-icl-uuid="uuid-1" data-amic="true">[1]</button>
+  <button data-icl-uuid="uuid-2" data-amic="true">[2]</button>
+
+  <p>Strikethrough and task list (GFM):</p>
+  <p><del>Deprecated API</del> → use <strong>v2</strong></p>
+  <ul class="contains-task-list">
+    <li class="task-list-item"><input type="checkbox" checked disabled> Enable strict mode</li>
+    <li class="task-list-item"><input type="checkbox" disabled> Add unit tests</li>
+  </ul>
+</div>
