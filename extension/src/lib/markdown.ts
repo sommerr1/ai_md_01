@@ -35,9 +35,19 @@ export function normalizeMarkdown(markdown: string): string {
   return markdown.replace(/\n{3,}/g, '\n\n').trim();
 }
 
+export function formatUserBody(body: string): string {
+  const lines = body.split('\n').filter((line) => line.length > 0);
+  if (lines.length === 0) return '> ';
+  if (lines.length === 1) return `> **${lines[0]}**`;
+  return lines.map((line) => `> ${line}`).join('\n');
+}
+
 export function turnToMarkdown(turn: ThreadTurn, td: TurndownService = createTurndownService()): string {
   const heading = turn.role === 'user' ? '## User' : '## AI';
   const body = normalizeMarkdown(td.turndown(turn.html));
+  if (turn.role === 'user') {
+    return `${heading}\n\n${formatUserBody(body)}`;
+  }
   return `${heading}\n\n${body}`;
 }
 

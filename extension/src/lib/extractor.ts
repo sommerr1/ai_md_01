@@ -1,12 +1,19 @@
 import type { ThreadTurn } from '../types/thread';
 
-export const SELECTOR_VERSION = 1;
+export const SELECTOR_VERSION = 2;
 
-export const TURN_SELECTORS = [
-  '[data-session-thread-id]',
-  'div.mZJni',
+export const USER_TURN_SELECTORS = [
   '[data-query-text]',
   '[data-user-query]',
+] as const;
+
+export const AI_TURN_SELECTORS = [
+  'div.mZJni',
+] as const;
+
+export const TURN_SELECTORS = [
+  ...USER_TURN_SELECTORS,
+  ...AI_TURN_SELECTORS,
 ] as const;
 
 export const FALLBACK_TURN_SELECTORS = [
@@ -52,7 +59,8 @@ function collectTurnCandidates(root: Element): Element[] {
   const seen = new Set<Element>();
   const nodes: Element[] = [];
 
-  for (const group of [TURN_SELECTORS, FALLBACK_TURN_SELECTORS]) {
+  const selectorGroups = [TURN_SELECTORS, FALLBACK_TURN_SELECTORS];
+  for (const group of selectorGroups) {
     for (const selector of group) {
       root.querySelectorAll(selector).forEach((el) => {
         if (seen.has(el)) return;

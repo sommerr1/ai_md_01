@@ -29,6 +29,20 @@ describe('extractor', () => {
     expect(turns[1].plainText).toContain('AI answer 1');
   });
 
+  it('collects user queries alongside ai blocks', () => {
+    const root = document.createElement('div');
+    root.innerHTML = `
+      <div data-subtree="aimc">
+        <div data-query-text>First question</div>
+        <div class="mZJni">First answer<button data-icl-uuid="1" data-amic="true">[1]</button></div>
+        <div data-query-text>Second question</div>
+        <div class="mZJni">Second answer<button data-icl-uuid="2" data-amic="true">[1]</button></div>
+      </div>
+    `;
+    const turns = extractTurns(root);
+    expect(turns.map((t) => t.role)).toEqual(['user', 'ai', 'user', 'ai']);
+  });
+
   it('extracts 22 turns for lazy-load sized threads', () => {
     const root = document.createElement('div');
     root.innerHTML = buildThreadHtml(22);

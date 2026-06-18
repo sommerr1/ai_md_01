@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Google AI Mode → Obsidian",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Save Google Search AI Mode chats to Obsidian vault as Markdown",
   "icons": {
     "16": "public/icons/16.png",

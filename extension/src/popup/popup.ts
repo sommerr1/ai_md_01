@@ -10,10 +10,9 @@ const statusEl = document.getElementById('status');
 const folderStatusEl = document.getElementById('folder-status');
 const saveBtn = document.getElementById('btn-save') as HTMLButtonElement;
 const pickFolderBtn = document.getElementById('btn-pick-folder') as HTMLButtonElement;
-const dialogEl = document.getElementById('dialog');
+const settingsBtn = document.getElementById('btn-settings') as HTMLButtonElement;
+const settingsPanel = document.getElementById('settings-panel');
 const filenameInput = document.getElementById('filename-input') as HTMLInputElement;
-const confirmBtn = document.getElementById('btn-confirm') as HTMLButtonElement;
-const cancelBtn = document.getElementById('btn-cancel') as HTMLButtonElement;
 const spinnerEl = document.getElementById('spinner');
 const errorEl = document.getElementById('error');
 const successEl = document.getElementById('success');
@@ -21,6 +20,7 @@ const successEl = document.getElementById('success');
 let activeTabId: number | undefined;
 let aiModeEnabled = false;
 let saving = false;
+let settingsOpen = false;
 
 const ERROR_MESSAGES: Record<SaveErrorCode, string> = {
   NOT_AI_MODE: 'Откройте Google AI Mode',
@@ -54,13 +54,21 @@ function showSuccess(text: string): void {
   errorEl?.classList.add('hidden');
 }
 
+function setSettingsOpen(open: boolean): void {
+  settingsOpen = open;
+  settingsPanel?.classList.toggle('hidden', !open);
+  settingsBtn?.setAttribute('aria-expanded', String(open));
+}
+
+function toggleSettings(): void {
+  setSettingsOpen(!settingsOpen);
+}
+
 function setBusy(busy: boolean): void {
   saving = busy;
   spinnerEl?.classList.toggle('hidden', !busy);
   saveBtn.disabled = busy || !aiModeEnabled;
   pickFolderBtn.disabled = busy;
-  confirmBtn.disabled = busy;
-  cancelBtn.disabled = busy;
 }
 
 async function sendRuntime<T>(message: unknown): Promise<T> {
@@ -87,6 +95,21 @@ async function refreshFolderStatus(): Promise<void> {
   }
 }
 
+async function refreshDefaultFilename(): Promise<void> {
+  if (!activeTabId || !aiModeEnabled) return;
+
+  try {
+    const preview = await sendTab<PreviewResponseMsg>({ type: 'GET_PREVIEW' });
+    const defaultName = preview.defaultFilename ?? preview.firstMessage ?? 'untitled';
+    if (!filenameInput.value.trim() || filenameInput.dataset.auto === 'true') {
+      filenameInput.value = defaultName;
+      filenameInput.dataset.auto = 'true';
+    }
+  } catch {
+    // keep current filename
+  }
+}
+
 async function refreshStatus(): Promise<void> {
   hideMessages();
   const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
@@ -105,7 +128,9 @@ async function refreshStatus(): Promise<void> {
     aiModeEnabled = response.aiMode && turns > 0;
     if (statusEl) {
       statusEl.textContent = response.aiMode
-        ? `AI Mode (${turns} turn${turns === 1 ? '' : 's'})`
+        ? turns > 0
+          ? `AI Mode (${turns} turn${turns === 1 ? '' : 's'})`
+          : 'AI Mode (нет сообщений)'
         : 'Не Google AI Mode';
     }
     saveBtn.disabled = !aiModeEnabled || saving;
@@ -116,42 +141,20 @@ async function refreshStatus(): Promise<void> {
   }
 
   await refreshFolderStatus();
-}
-
-function openDialog(defaultName: string): void {
-  filenameInput.value = defaultName;
-  dialogEl?.classList.remove('hidden');
-  filenameInput.focus();
-  filenameInput.select();
-}
-
-function closeDialog(): void {
-  dialogEl?.classList.add('hidden');
+  await refreshDefaultFilename();
 }
 
 async function onSaveClick(): Promise<void> {
   if (!aiModeEnabled || saving) return;
   hideMessages();
 
-  try {
-    const preview = await sendTab<PreviewResponseMsg>({ type: 'GET_PREVIEW' });
-    openDialog(preview.defaultFilename ?? preview.firstMessage ?? 'untitled');
-  } catch {
-    showError('DOM_CHANGED');
-  }
-}
-
-async function confirmSave(): Promise<void> {
-  if (saving) return;
   const filename = filenameInput.value.trim();
   if (!filename) {
     showError('EMPTY_THREAD', 'Введите имя файла');
     return;
   }
 
-  closeDialog();
   setBusy(true);
-  hideMessages();
 
   try {
     const response = await sendRuntime<SaveSuccess | SaveError>({
@@ -162,6 +165,7 @@ async function confirmSave(): Promise<void> {
     if (response.type === 'SAVE_ERROR') {
       showError(response.code as SaveErrorCode, response.message);
       if (response.code === 'NO_FOLDER') {
+        setSettingsOpen(true);
         await pickFolder();
       }
       return;
@@ -191,25 +195,29 @@ async function pickFolder(): Promise<void> {
   }
 }
 
+settingsBtn.addEventListener('click', () => toggleSettings());
 saveBtn.addEventListener('click', () => void onSaveClick());
 pickFolderBtn.addEventListener('click', () => void pickFolder());
-confirmBtn.addEventListener('click', () => void confirmSave());
-cancelBtn.addEventListener('click', () => closeDialog());
+
+filenameInput.addEventListener('input', () => {
+  filenameInput.dataset.auto = 'false';
+});
 
 filenameInput.addEventListener('keydown', (event) => {
   if (event.key === 'Enter') {
     event.preventDefault();
-    void confirmSave();
+    void onSaveClick();
   }
   if (event.key === 'Escape') {
     event.preventDefault();
-    closeDialog();
+    setSettingsOpen(false);
+    filenameInput.blur();
   }
 });
 
 document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape' && !dialogEl?.classList.contains('hidden')) {
-    closeDialog();
+  if (event.key === 'Escape' && settingsOpen) {
+    setSettingsOpen(false);
   }
 });
 

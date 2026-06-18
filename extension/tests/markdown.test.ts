@@ -48,6 +48,7 @@ describe('markdown', () => {
     const aiMd = turnToMarkdown({ role: 'ai', html: SAMPLE_AI_HTML, plainText: 'answer' }, td);
 
     expect(userMd.startsWith('## User')).toBe(true);
+    expect(userMd).toContain('> **Question?**');
     expect(aiMd.startsWith('## AI')).toBe(true);
     expect(aiMd).toMatch(/```python/);
     expect(aiMd).toMatch(/\| A \| B \|/);

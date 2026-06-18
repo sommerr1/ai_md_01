@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [0.1.1] - 2026-06-18
+
+### Changed
+- KB-013 Popup UX: settings gear for folder picker, single Save button, filename pre-filled on open
+- KB-013 Markdown: user turns as blockquote (`> **question**`); extractor collects user+AI selectors together
+
 ## [0.1.0] - 2026-06-18
 
 ### Added

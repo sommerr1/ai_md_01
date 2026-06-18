@@ -8,21 +8,21 @@
 </head>
 <body>
   <main>
-    <p id="status">Проверка…</p>
-    <p id="folder-status" class="muted">Папка не выбрана</p>
+    <header class="header">
+      <p id="status">Проверка…</p>
+      <button id="btn-settings" type="button" class="icon-btn" title="Настройки" aria-expanded="false" aria-controls="settings-panel">⚙</button>
+    </header>
 
-    <div id="dialog" class="hidden" role="dialog" aria-labelledby="dialog-title">
-      <p id="dialog-title">Имя файла</p>
-      <input id="filename-input" type="text" maxlength="80" />
-      <div class="row">
-        <button id="btn-confirm" type="button">Сохранить</button>
-        <button id="btn-cancel" type="button">Отмена</button>
-      </div>
+    <div id="settings-panel" class="hidden" role="region" aria-label="Настройки">
+      <p id="folder-status" class="muted">Папка не выбрана</p>
+      <button id="btn-pick-folder" type="button">Изменить папку</button>
     </div>
+
+    <label id="filename-label" for="filename-input">Имя файла</label>
+    <input id="filename-input" type="text" maxlength="80" />
 
     <div id="actions">
       <button id="btn-save" type="button" disabled>Сохранить</button>
-      <button id="btn-pick-folder" type="button">Изменить папку</button>
     </div>
 
     <div id="spinner" class="hidden" aria-live="polite">Сохранение…</div>
