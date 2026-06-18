@@ -18,6 +18,7 @@
   "devDependencies": {
     "@crxjs/vite-plugin": "^2.0.0-beta.28",
     "@types/chrome": "^0.0.268",
+    "happy-dom": "^20.10.6",
     "typescript": "^5.7.2",
     "vite": "^6.0.3",
     "vitest": "^3.0.5"

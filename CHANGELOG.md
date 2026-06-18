@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [0.0.6] - 2026-06-18
+
+### Added
+- KB-006 AI Mode detection: `detection.ts` (URL + DOM, RU/EN labels), content script `GET_STATUS`, popup enable/disable
+
 ## [0.0.5] - 2026-06-18
 
 ### Added
